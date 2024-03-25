@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240207 16:45:58.918" rpa="false" schemaversion="4">
+<suite id="s1" name="Apple Teste" source="C:\CursoUdemy\RobotFramework\Web Testing\apple_teste.robot\apple_teste.robot">
+<test id="s1-t1" name="Caso de teste #01 - Adicionar um produto no carrinho e remover do carrinho" line="11">
+<kw name="Abrir o navegador" library="apple_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240207 16:45:59.127" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20240207 16:45:59.127" endtime="20240207 16:46:00.802"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240207 16:46:00.802" endtime="20240207 16:46:00.924"/>
+</kw>
+<status status="PASS" starttime="20240207 16:45:59.127" endtime="20240207 16:46:00.924"/>
+</kw>
+<kw name="Dado que estou na home page da Apple" library="apple_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240207 16:46:00.924" level="INFO">Opening url 'https://www.apple.com/pt/'</msg>
+<status status="PASS" starttime="20240207 16:46:00.924" endtime="20240207 16:46:01.909"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${logo_Apple}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240207 16:46:01.909" endtime="20240207 16:46:01.939"/>
+</kw>
+<status status="PASS" starttime="20240207 16:46:00.924" endtime="20240207 16:46:01.939"/>
+</kw>
+<kw name="Quando clico na opção Iphone no menú superior" library="apple_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${botão_iphone_menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240207 16:46:01.939" level="INFO">Clicking element '//span[@class='globalnav-link-text-container'][contains(.,'iPhone')]'.</msg>
+<status status="PASS" starttime="20240207 16:46:01.939" endtime="20240207 16:46:02.531"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Texto_Iphone_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240207 16:46:02.531" endtime="20240207 16:46:02.557"/>
+</kw>
+<status status="PASS" starttime="20240207 16:46:01.939" endtime="20240207 16:46:02.557"/>
+</kw>
+<kw name="E clico na opção Iphone 15 Pro no menú superior" library="apple_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Texto_Iphone_menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240207 16:46:02.557" level="INFO">Clicking element '//span[@class='chapternav-label'][contains(.,'iPhone 15 Pro')]'.</msg>
+<status status="PASS" starttime="20240207 16:46:02.557" endtime="20240207 16:46:04.367"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Apresentação_texto_iphone}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240207 16:46:04.367" endtime="20240207 16:46:06.038"/>
+</kw>
+<status status="PASS" starttime="20240207 16:46:02.557" endtime="20240207 16:46:06.038"/>
+</kw>
+<kw name="E seleciono o botão compre" library="apple_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${botão_compre}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240207 16:46:06.038" level="INFO">Clicking element '//a[contains(@class,'welcome__lockup-cta show')]'.</msg>
+<status status="PASS" starttime="20240207 16:46:06.038" endtime="20240207 16:46:07.288"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Texto_compre_iphone}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240207 16:46:07.288" endtime="20240207 16:46:07.319"/>
+</kw>
+<status status="PASS" starttime="20240207 16:46:06.038" endtime="20240207 16:46:07.319"/>
+</kw>
+<kw name="E seleciono as características do produto" library="apple_resources">
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>value=5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240207 16:46:07.319" endtime="20240207 16:46:07.319"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Botao_pro_max}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20240207 16:46:12.697" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240207 16:46:12.697" level="FAIL">Element '//span[@class='form-selector-title'][contains(.,'iPhone 15 Pro MaxEcrã de 6,7 polegadas¹')]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20240207 16:46:07.319" endtime="20240207 16:46:12.710"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>locator=${Botao_pro_max}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20240207 16:46:12.710" endtime="20240207 16:46:12.710"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Botao_pro_max}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240207 16:46:12.710" endtime="20240207 16:46:12.710"/>
+</kw>
+<status status="FAIL" starttime="20240207 16:46:07.319" endtime="20240207 16:46:12.710"/>
+</kw>
+<doc>esse teste verifica se após adicionar o produto ao carrinho é possível remover e o carrinho ficar vazio</doc>
+<tag>carrinho de compras</tag>
+<status status="FAIL" starttime="20240207 16:45:59.127" endtime="20240207 16:46:12.710">Element '//span[@class='form-selector-title'][contains(.,'iPhone 15 Pro MaxEcrã de 6,7 polegadas¹')]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20240207 16:45:58.935" endtime="20240207 16:46:12.713"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">carrinho de compras</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Apple Teste">Apple Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
